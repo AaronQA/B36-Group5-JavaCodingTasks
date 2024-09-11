@@ -7,4 +7,16 @@ public class OddOrEven {
     identify(6); ->"Even"*/
 
     //Solution
+    public static void main(String[] args) {
+        System.out.println(oddEven(5));
+        System.out.println(oddEven(6));
+    }
+    public static String oddEven(int num) {
+        if(num%2==0){
+            return "Even";
+        }else {
+            return "Odd";
+        }
+    }
 }
+
