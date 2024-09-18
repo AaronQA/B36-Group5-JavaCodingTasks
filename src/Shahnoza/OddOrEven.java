@@ -6,5 +6,17 @@ public class OddOrEven {
     identify(5); ->"Odd"
     identify(6); ->"Even"*/
 
-    // solution added
+    public static void main(String[] args) {
+        System.out.println(oddEven(5));
+        System.out.println(oddEven(6));
+    }
+    public static String oddEven(int num) {
+        if(num%2==0){
+            return "Even";
+        }else {
+            return "Odd";
+        }
+    }
+
+
 }
