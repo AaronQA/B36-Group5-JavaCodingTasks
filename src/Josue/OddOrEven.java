@@ -1,7 +1,5 @@
 package Josue;
 
-import java.util.Scanner;
-
 public class OddOrEven {
 
     public static String oddOrEven(int n) {
