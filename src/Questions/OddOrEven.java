@@ -6,21 +6,5 @@ public class OddOrEven {
     identify(5); ->"Odd"
     identify(6); ->"Even"*/
 
-    public static void main(String[] args) {
 
-
-
-        System.out.println(identify(5));
-        System.out.println(identify(6));
-    }
-    // task done.................
-    public static String identify(int number) {
-        if (number % 2 == 0) {
-            return "Even";
-        } else {
-            return "Odd";
-
-        }
-    }
 }
-//done...
