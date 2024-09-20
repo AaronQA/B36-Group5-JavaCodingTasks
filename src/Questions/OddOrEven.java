@@ -5,4 +5,6 @@ public class OddOrEven {
     Output ex:
     identify(5); ->"Odd"
     identify(6); ->"Even"*/
+
+
 }
