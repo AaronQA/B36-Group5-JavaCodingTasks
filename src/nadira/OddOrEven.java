@@ -4,7 +4,7 @@ public class OddOrEven {
     public static void main(String[] args) {
 
 
-        System.out.println(identify(7));
+        System.out.println(identify(0));
     }
        /*Write  a method which can identify given int number is even or odd
     Output ex:
@@ -14,7 +14,7 @@ public class OddOrEven {
 
     public static String identify(int number) {
 
-        if (number >= 0) {
+        if (number > 0) {
 
             if (number % 2 == 0) {
                 return "Even";
