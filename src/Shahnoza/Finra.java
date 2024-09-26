@@ -11,7 +11,7 @@ package Shahnoza;
 
         public static void finra(){
 
-            String result= "";
+            String result = "";
 
             for (int i = 1; i <= 30; i++) {
                 if(i%15==0){
@@ -21,8 +21,7 @@ package Shahnoza;
                 } else if (i%5==0) {
                     result+= "RA ";
                 }else {
-                    result+= i+ " ";
-                }
+                    result+= i+ " ";                }
             }
             System.out.println(result);
         }
