@@ -8,6 +8,7 @@ public class OddOrEven {
         }else{result = "Odd";}
 
 
+
         return result;
 
     }
