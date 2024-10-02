@@ -6,7 +6,7 @@ public class swapTwoNumbers {
         swapping(8,4);
         swapping(45672,389);
         swapping(-3,-4);
-        //swapping(-3,0);
+
     }
 
     //Swap two int variables' values without using a third variable
