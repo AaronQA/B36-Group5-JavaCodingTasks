@@ -4,16 +4,19 @@ public class reverseNegativeNumber {
     //Write a return method that can reverse digits of a negative number and return it as int
     //input: -35  output: -53
 
-   //reverseNegativeNumber by Barno
+   //reverseNegativeNumber by Tilbe
     public static int reverseNegativeNumber(int num){
         int reverseNegativeNumber=0;
+        if(num>0) throw new IllegalArgumentException("Number must be less than 0");
         while(num!=0){
-            int digit= num%10;
-            reverseNegativeNumber=reverseNegativeNumber*10+digit;
+            int digit= num%10; //5
+            reverseNegativeNumber=reverseNegativeNumber*10 + digit;
             num/=10;
+
         }
         return reverseNegativeNumber;
     }
+
 
 
     public static void main(String[] args) {
