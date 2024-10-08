@@ -5,22 +5,35 @@ public class reverseNegativeNumber {
     //input: -35  output: -53
 
    //reverseNegativeNumber by Tilbe
+//    public static int reverseNegativeNumber(int num){
+//        int reverseNegativeNumber=0;
+//        if(num>0) throw new IllegalArgumentException("Number must be less than 0");
+//        while(num!=0){
+//            int digit= num%10; //5
+//            reverseNegativeNumber=reverseNegativeNumber*10 + digit;
+//            num/=10;
+//
+//        }
+//        return reverseNegativeNumber;
+//    }
+    //reverseNegativeNumber by Aiturgan
     public static int reverseNegativeNumber(int num){
         int reverseNegativeNumber=0;
-        if(num>0) throw new IllegalArgumentException("Number must be less than 0");
-        while(num!=0){
-            int digit= num%10; //5
-            reverseNegativeNumber=reverseNegativeNumber*10 + digit;
+        while(num!=0){ //50
+            int digit= num%10; //digit=0
+            reverseNegativeNumber=reverseNegativeNumber*10 + digit;//""+0+0
             num/=10;
-
         }
         return reverseNegativeNumber;
     }
 
 
 
+
+
+
     public static void main(String[] args) {
-        System.out.println(reverseNegativeNumber(-35));
+        System.out.println(reverseNegativeNumber(-50));
     }
 /*
 The selected code is a method named `reversedNegativeNumber` that takes an integer as input and returns the reversed digits of the negative number as an integer.
