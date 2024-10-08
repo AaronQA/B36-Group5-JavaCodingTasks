@@ -16,18 +16,18 @@ finra();
 
    public  static void finra(){
 
-      String result ="";
+      String result="";
 
       for (int i = 1; i <=30 ; i++) {
 
          if( i % 15 == 0){
-            result += "FINRA";
+            result += "FINRA ";
          }else if (i % 3 == 0){
-            result += "FIN";
+            result += "FIN ";
          }else if( i % 5 == 0){
-            result += "RA";
+            result += "RA ";
          }else{
-            result += i;
+            result += i+" ";
          }
 
       }
