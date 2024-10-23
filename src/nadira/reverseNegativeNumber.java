@@ -4,7 +4,7 @@ public class reverseNegativeNumber {
     //Write a return method that can reverse digits of a negative number and return it as int
     //input: -35  output: -53
 
-    public static int reverseNumber(int num) {
+    public static int reverseNegativeNumber(int num) {
 
         int reversedNum = 0;
 if ( num>0){
@@ -22,7 +22,7 @@ if ( num>0){
     public static void main(String[] args) {
 
 
-        System.out.println("reverseNegativeNumber.reverseNumber(-35) = " + reverseNegativeNumber.reverseNumber(-35));
+        System.out.println("reverseNegativeNumber.reverseNumber(-35) = " + reverseNegativeNumber.reverseNegativeNumber(-35));
 
     }
 
