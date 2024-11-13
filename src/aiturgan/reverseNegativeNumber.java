@@ -17,6 +17,8 @@ public class reverseNegativeNumber {
 
     public static int reverseNegative(int n) {
         if (n < 0) {
+            throw new IllegalArgumentException();
+        }
             int reversed = 0;
 
             while (n != 0) {
@@ -26,8 +28,7 @@ public class reverseNegativeNumber {
             }
 
             return reversed;
-        }
-        return 0;
+
     }
 
 
