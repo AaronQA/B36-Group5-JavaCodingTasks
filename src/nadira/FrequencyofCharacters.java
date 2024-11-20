@@ -7,8 +7,8 @@ public class FrequencyofCharacters {
 
     public static void main(String[] args) {
 
-        System.out.println("frequencyOfCharacters(\"AAABBCDD\") = " + frequencyOfCharacters("AAABBCDD"));
-
+        System.out.println("frequencyOfCharacters(\"AAABBCDD\") = " + frequencyOfCharacters("AA AABB BB  CCC DDD"));
+        //System.out.println("frequencyOfCharacters(null) = " + frequencyOfCharacters(null));
 
     }
 public static  String frequencyOfCharacters(String word) {
