@@ -12,24 +12,27 @@ public class FrequencyOfCharacters {
         String result = "";
         int length = str.length();
 
-        // Loop through each character in the string
+        if ( str==null || str.isBlank() || str.isEmpty()){
+            throw new IllegalArgumentException("String can not be null, empty or blank!");
+        }
+
         for (int i = 0; i < length; i++) {
             char currentChar = str.charAt(i);
             int count = 0;
 
-            // Skip already processed characters
+
             if (result.contains(String.valueOf(currentChar))) {
                 continue;
             }
 
-            // Count occurrences of the current character
+
             for (int j = 0; j < length; j++) {
                 if (str.charAt(j) == currentChar) {
                     count++;
                 }
             }
 
-            // Concatenate the character and its frequency to the result string
+
             result += currentChar + String.valueOf(count);
         }
 
@@ -38,6 +41,12 @@ public class FrequencyOfCharacters {
 
     public static void main(String[] args) {
         System.out.println(getFrequencyOfChars("AABBCCC"));
+        System.out.println(getFrequencyOfChars("AAABBCDD"));
+        System.out.println(getFrequencyOfChars("aaaaaBBccDDDDD"));
+        System.out.println(getFrequencyOfChars("a    b    cccc  d"));
+        System.out.println(getFrequencyOfChars("1222233$$@@@@!!!"));
+        System.out.println(getFrequencyOfChars("  "));
+        System.out.println(getFrequencyOfChars(null));
 
     }
 }
