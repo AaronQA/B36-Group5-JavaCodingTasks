@@ -16,23 +16,28 @@ public class FindUnique {
 
     public static String findUnique(String str) {
 
+       
         String unique = "";
 
-        try {
-            if (str == null || str.isEmpty() || str.isBlank()) {
+        // Handle null, empty, or blank cases upfront
+        if (str == null || str.isEmpty() || str.isBlank()) {
+            System.out.println("Input is null, empty, or blank. Returning an empty string.");
+            return unique; // Return an empty string
+        }
 
-                throw new IllegalArgumentException("Input can not be null, empty, blank ");
-            }
-        } catch (Exception e) {
+        // Main logic to find unique characters
+        try {
             for (int i = 0; i < str.length(); i++) {
                 char ch = str.charAt(i);
                 if (str.indexOf(ch) == str.lastIndexOf(ch)) {
                     unique += ch;
                 }
             }
+        } catch (Exception e) {
+            // Log the exception for debugging
+            System.err.println("An unexpected error occurred: " + e.getMessage());
         }
-            return unique;
 
-
+        return unique;
     }
 }
