@@ -7,10 +7,10 @@ public class FindUnique {
 
     public static void main(String[] args) {
         System.out.println(findUnique("      "));
-        System.out.println(findUnique(""));
-        System.out.println(findUnique(null));
-        System.out.println(findUnique("AAABBBCCCDEF"));
-        System.out.println(findUnique("AAABBBCCCDEF234"));
+//        System.out.println(findUnique(""));
+//        System.out.println(findUnique(null));
+//        System.out.println(findUnique("AAABBBCCCDEF"));
+//        System.out.println(findUnique("AAABBBCCCDEF234"));
 
     }
 
