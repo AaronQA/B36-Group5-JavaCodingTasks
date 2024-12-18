@@ -8,19 +8,26 @@ public class arrayFindMinimum {
         int[] arr1 = {4,3,1212,32,-12,32,0};
         int[] arr2 = {1,1,1,1,1,1,1,1};
         System.out.println(findMin(arr));
+        System.out.println(findMin(null));
         System.out.println(findMin(arr1));
+        System.out.println(findMin());
         System.out.println(findMin(arr2));
+        System.out.println(findMin(1,0,2,-1,-332,32,223));
 
     }
 
-    public static int findMin(int[] arr) {
-        int min = arr[0];
-
-        for (int i = 1; i < arr.length; i++) {
-            if (arr[i] < min) {
-                min = arr[i];
+    public static int findMin(int... arr) {
+        try {
+            int min = arr[0];
+            for (int each : arr) {
+                if (each < min) {
+                    min = each;
+                }
             }
+            return min;
+        } catch (Exception e) {
+            System.out.print("Array is empty or null. Try again! -> ");
+            return Integer.MAX_VALUE;
         }
-        return min;
     }
 }
