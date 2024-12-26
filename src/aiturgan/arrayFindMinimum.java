@@ -16,7 +16,7 @@ public class arrayFindMinimum {
 
     }
 
-    public static int findMin(int... arr) {
+    public static int findMin(int... arr) { //var args
         try {
             int min = arr[0];
             for (int each : arr) {
