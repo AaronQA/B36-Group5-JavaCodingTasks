@@ -9,7 +9,7 @@ public class arrayFindMinimum {
 
     public static void main(String[] args) {
 
-        System.out.println("minNumberFromArray = " + minNumberFromArray(99, 12, 23, 32, 44, 57, 6));
+        System.out.println("minNumberFromArray = " + minNumberFromArray(-99, 12, 23, 32, 44, 57, 6));
     }
 
 
